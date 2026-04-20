@@ -1,0 +1,169 @@
+{
+  "tools": [
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "category": "File Storage",
+      "domains": ["dropbox.com", "dropboxusercontent.com", "dl.dropboxusercontent.com"],
+      "risk_level": "HIGH",
+      "risk_reasons": ["Unauthorised data egress", "No DLP controls", "Personal accounts uncontrolled"],
+      "approved_alternative": "SharePoint / OneDrive",
+      "gdpr_concern": true,
+      "data_types": ["Documents", "Media", "Code"]
+    },
+    {
+      "id": "whatsapp",
+      "name": "WhatsApp Business",
+      "category": "Messaging",
+      "domains": ["whatsapp.com", "whatsapp.net", "wa.me"],
+      "risk_level": "HIGH",
+      "risk_reasons": ["End-to-end encrypted – no archiving", "External communication uncontrolled", "Data residency unknown"],
+      "approved_alternative": "Microsoft Teams",
+      "gdpr_concern": true,
+      "data_types": ["Messages", "Files", "Voice"]
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT / OpenAI",
+      "category": "AI Tools",
+      "domains": ["chat.openai.com", "openai.com", "api.openai.com", "chatgpt.com"],
+      "risk_level": "HIGH",
+      "risk_reasons": ["IP and confidential data exposure", "Training data opt-out unclear", "No corporate data policy"],
+      "approved_alternative": "Microsoft Copilot (Enterprise)",
+      "gdpr_concern": true,
+      "data_types": ["Text", "Code", "Confidential docs"]
+    },
+    {
+      "id": "trello",
+      "name": "Trello",
+      "category": "Project Management",
+      "domains": ["trello.com", "atlassian.com"],
+      "risk_level": "MEDIUM",
+      "risk_reasons": ["Public boards risk", "No SSO enforcement", "Data stored outside corporate systems"],
+      "approved_alternative": "Jira / Azure DevOps",
+      "gdpr_concern": false,
+      "data_types": ["Tasks", "Projects", "Comments"]
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "category": "Productivity",
+      "domains": ["notion.so", "notion.com"],
+      "risk_level": "MEDIUM",
+      "risk_reasons": ["Data outside corporate boundary", "Sharing controls vary by plan"],
+      "approved_alternative": "Confluence / SharePoint",
+      "gdpr_concern": false,
+      "data_types": ["Documents", "Wikis", "Databases"]
+    },
+    {
+      "id": "google_drive",
+      "name": "Google Drive (Personal)",
+      "category": "File Storage",
+      "domains": ["drive.google.com", "docs.google.com", "sheets.google.com", "slides.google.com"],
+      "risk_level": "HIGH",
+      "risk_reasons": ["Personal account usage bypasses corporate controls", "Data exfiltration vector"],
+      "approved_alternative": "SharePoint / OneDrive",
+      "gdpr_concern": true,
+      "data_types": ["Docs", "Sheets", "Slides"]
+    },
+    {
+      "id": "slack",
+      "name": "Slack (Unauthorised Workspace)",
+      "category": "Messaging",
+      "domains": ["slack.com", "slack-edge.com", "slack-imgs.com"],
+      "risk_level": "MEDIUM",
+      "risk_reasons": ["Multiple workspaces not controlled", "File sharing unmonitored"],
+      "approved_alternative": "Microsoft Teams",
+      "gdpr_concern": false,
+      "data_types": ["Messages", "Files", "Integrations"]
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom (Personal Account)",
+      "category": "Video Conferencing",
+      "domains": ["zoom.us", "zoom.com", "zmb.cz"],
+      "risk_level": "MEDIUM",
+      "risk_reasons": ["Recording storage outside corporate control", "Personal accounts unmanaged"],
+      "approved_alternative": "Microsoft Teams / Webex",
+      "gdpr_concern": false,
+      "data_types": ["Video", "Recordings", "Chat"]
+    },
+    {
+      "id": "fiverr",
+      "name": "Fiverr",
+      "category": "Freelance / Procurement",
+      "domains": ["fiverr.com", "fiverrcdn.com"],
+      "risk_level": "HIGH",
+      "risk_reasons": ["Unapproved vendor engagement", "IP ownership risk", "Procurement bypass"],
+      "approved_alternative": "Approved vendor portal",
+      "gdpr_concern": true,
+      "data_types": ["Contracts", "Files", "Communications"]
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "category": "Design Tools",
+      "domains": ["canva.com", "canva.cn"],
+      "risk_level": "LOW",
+      "risk_reasons": ["Brand guideline violations possible"],
+      "approved_alternative": "Adobe Creative Cloud",
+      "gdpr_concern": false,
+      "data_types": ["Graphics", "Presentations"]
+    },
+    {
+      "id": "mailchimp",
+      "name": "Mailchimp",
+      "category": "Email Marketing",
+      "domains": ["mailchimp.com", "mailchimpapp.com", "list-manage.com"],
+      "risk_level": "HIGH",
+      "risk_reasons": ["Customer data exported to third party", "GDPR consent issues", "Uncontrolled mailing lists"],
+      "approved_alternative": "Approved CRM email module",
+      "gdpr_concern": true,
+      "data_types": ["Email lists", "Contact data", "Campaigns"]
+    },
+    {
+      "id": "loom",
+      "name": "Loom",
+      "category": "Video Messaging",
+      "domains": ["loom.com", "cdn.loom.com"],
+      "risk_level": "MEDIUM",
+      "risk_reasons": ["Screen recordings may capture sensitive data", "External sharing uncontrolled"],
+      "approved_alternative": "Microsoft Stream",
+      "gdpr_concern": false,
+      "data_types": ["Screen recordings", "Videos"]
+    },
+    {
+      "id": "airtable",
+      "name": "Airtable",
+      "category": "Database / Spreadsheet",
+      "domains": ["airtable.com"],
+      "risk_level": "MEDIUM",
+      "risk_reasons": ["Spreadsheet/DB data outside corporate systems", "Sharing permissions uncontrolled"],
+      "approved_alternative": "SharePoint Lists / Azure SQL",
+      "gdpr_concern": true,
+      "data_types": ["Structured data", "Workflows"]
+    },
+    {
+      "id": "github_personal",
+      "name": "GitHub (Personal Account)",
+      "category": "Code Repository",
+      "domains": ["github.com", "raw.githubusercontent.com"],
+      "risk_level": "HIGH",
+      "risk_reasons": ["Source code leakage to personal repos", "IP ownership unclear", "Public repo risk"],
+      "approved_alternative": "GitHub Enterprise / Azure DevOps",
+      "gdpr_concern": false,
+      "data_types": ["Source code", "Configs", "Secrets"]
+    },
+    {
+      "id": "wetransfer",
+      "name": "WeTransfer",
+      "category": "File Transfer",
+      "domains": ["wetransfer.com", "we.tl"],
+      "risk_level": "HIGH",
+      "risk_reasons": ["No encryption at rest", "Data stored on third-party servers", "Temporary links uncontrolled"],
+      "approved_alternative": "SharePoint / Secure file sharing",
+      "gdpr_concern": true,
+      "data_types": ["Large files", "Media", "Documents"]
+    }
+  ]
+}

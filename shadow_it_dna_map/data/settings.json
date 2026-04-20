@@ -1,0 +1,5 @@
+{
+  "risk_threshold": "MEDIUM",
+  "auto_alert": true,
+  "session_limit": 20
+}

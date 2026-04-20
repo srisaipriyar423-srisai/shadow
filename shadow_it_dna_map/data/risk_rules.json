@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "risk_weights": {
+    "HIGH": 10,
+    "MEDIUM": 5,
+    "LOW": 1
+  },
+  "frequency_multipliers": {
+    "low": { "min": 1, "max": 50, "multiplier": 1.0 },
+    "medium": { "min": 51, "max": 200, "multiplier": 1.5 },
+    "high": { "min": 201, "max": 99999, "multiplier": 2.0 }
+  },
+  "gdpr_penalty": 3,
+  "max_score": 100,
+  "score_bands": {
+    "low": { "min": 0, "max": 30, "label": "Low Exposure", "color": "#4CAF50" },
+    "medium": { "min": 31, "max": 65, "label": "Medium Exposure", "color": "#FF9800" },
+    "high": { "min": 66, "max": 100, "label": "High Exposure", "color": "#F44336" }
+  }
+}

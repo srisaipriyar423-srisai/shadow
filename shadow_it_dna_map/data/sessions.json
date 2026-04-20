@@ -1,0 +1,4522 @@
+{
+  "sessions": [
+    {
+      "id": "sess_20260329_115835",
+      "name": "Demo DNS Log \u2014 29 Mar 2026",
+      "uploaded_at": "2026-03-29T11:58:35",
+      "log_lines": 10000,
+      "unique_domains": 1613,
+      "shadow_tools_found": 8,
+      "exposure_score": 60.42,
+      "tool_detections": [
+        {
+          "tool_id": "github_personal",
+          "tool_name": "GitHub (Personal Account)",
+          "category": "Code Repository",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Source code leakage to personal repos",
+            "IP ownership unclear",
+            "Public repo risk"
+          ],
+          "query_count": 344,
+          "unique_ips": 344,
+          "first_seen": "2026-03-22T12:02:40",
+          "last_seen": "2026-03-29T10:52:13",
+          "domains_matched": [
+            "github.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "GitHub Enterprise / Azure DevOps"
+        },
+        {
+          "tool_id": "zoom",
+          "tool_name": "Zoom (Personal Account)",
+          "category": "Video Conferencing",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Recording storage outside corporate control",
+            "Personal accounts unmanaged"
+          ],
+          "query_count": 329,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T12:03:09",
+          "last_seen": "2026-03-29T11:32:30",
+          "domains_matched": [
+            "zmb.cz",
+            "zoom.com",
+            "zoom.us"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Microsoft Teams / Webex"
+        },
+        {
+          "tool_id": "slack",
+          "tool_name": "Slack (Unauthorised Workspace)",
+          "category": "Messaging",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Multiple workspaces not controlled",
+            "File sharing unmonitored"
+          ],
+          "query_count": 323,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T13:01:16",
+          "last_seen": "2026-03-29T11:53:20",
+          "domains_matched": [
+            "slack-edge.com",
+            "slack-imgs.com",
+            "slack.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Microsoft Teams"
+        },
+        {
+          "tool_id": "trello",
+          "tool_name": "Trello",
+          "category": "Project Management",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Public boards risk",
+            "No SSO enforcement",
+            "Data stored outside corporate systems"
+          ],
+          "query_count": 319,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T12:06:13",
+          "last_seen": "2026-03-29T11:26:12",
+          "domains_matched": [
+            "atlassian.com",
+            "trello.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Jira / Azure DevOps"
+        },
+        {
+          "tool_id": "fiverr",
+          "tool_name": "Fiverr",
+          "category": "Freelance / Procurement",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Unapproved vendor engagement",
+            "IP ownership risk",
+            "Procurement bypass"
+          ],
+          "query_count": 309,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T12:07:03",
+          "last_seen": "2026-03-29T11:55:53",
+          "domains_matched": [
+            "fiverr.com",
+            "fiverrcdn.com"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "Approved vendor portal"
+        },
+        {
+          "tool_id": "mailchimp",
+          "tool_name": "Mailchimp",
+          "category": "Email Marketing",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Customer data exported to third party",
+            "GDPR consent issues",
+            "Uncontrolled mailing lists"
+          ],
+          "query_count": 309,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T12:07:53",
+          "last_seen": "2026-03-29T11:34:45",
+          "domains_matched": [
+            "list-manage.com",
+            "mailchimp.com",
+            "mailchimpapp.com"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "Approved CRM email module"
+        },
+        {
+          "tool_id": "dropbox",
+          "tool_name": "Dropbox",
+          "category": "File Storage",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Unauthorised data egress",
+            "No DLP controls",
+            "Personal accounts uncontrolled"
+          ],
+          "query_count": 307,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T14:11:20",
+          "last_seen": "2026-03-29T11:57:21",
+          "domains_matched": [
+            "dropbox.com",
+            "dropboxusercontent.com"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "SharePoint / OneDrive"
+        },
+        {
+          "tool_id": "whatsapp",
+          "tool_name": "WhatsApp Business",
+          "category": "Messaging",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "End-to-end encrypted \u2013 no archiving",
+            "External communication uncontrolled",
+            "Data residency unknown"
+          ],
+          "query_count": 290,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T12:28:26",
+          "last_seen": "2026-03-29T11:54:27",
+          "domains_matched": [
+            "wa.me",
+            "whatsapp.com",
+            "whatsapp.net"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "Microsoft Teams"
+        }
+      ],
+      "unknown_domains": [
+        {
+          "domain": "google.com",
+          "query_count": 677
+        },
+        {
+          "domain": "windowsupdate.com",
+          "query_count": 412
+        },
+        {
+          "domain": "microsoft.com",
+          "query_count": 404
+        },
+        {
+          "domain": "live.com",
+          "query_count": 388
+        },
+        {
+          "domain": "jsdelivr.net",
+          "query_count": 387
+        },
+        {
+          "domain": "bing.com",
+          "query_count": 380
+        },
+        {
+          "domain": "fastly.net",
+          "query_count": 379
+        },
+        {
+          "domain": "googleapis.com",
+          "query_count": 378
+        },
+        {
+          "domain": "cloudflare.com",
+          "query_count": 368
+        },
+        {
+          "domain": "amazonaws.com",
+          "query_count": 364
+        },
+        {
+          "domain": "akamai.com",
+          "query_count": 363
+        },
+        {
+          "domain": "outlook.com",
+          "query_count": 363
+        },
+        {
+          "domain": "windows.com",
+          "query_count": 348
+        },
+        {
+          "domain": "azure.com",
+          "query_count": 342
+        },
+        {
+          "domain": "office.com",
+          "query_count": 338
+        },
+        {
+          "domain": "a380.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "a702.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "a805.io",
+          "query_count": 1
+        },
+        {
+          "domain": "a886.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "able422.io",
+          "query_count": 1
+        },
+        {
+          "domain": "able785.io",
+          "query_count": 1
+        },
+        {
+          "domain": "about865.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "above480.io",
+          "query_count": 1
+        },
+        {
+          "domain": "above59.io",
+          "query_count": 1
+        },
+        {
+          "domain": "above946.app",
+          "query_count": 1
+        },
+        {
+          "domain": "according581.io",
+          "query_count": 1
+        },
+        {
+          "domain": "account604.app",
+          "query_count": 1
+        },
+        {
+          "domain": "account996.io",
+          "query_count": 1
+        },
+        {
+          "domain": "across474.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "across6.io",
+          "query_count": 1
+        },
+        {
+          "domain": "act244.io",
+          "query_count": 1
+        },
+        {
+          "domain": "act319.io",
+          "query_count": 1
+        },
+        {
+          "domain": "act740.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "activity303.io",
+          "query_count": 1
+        },
+        {
+          "domain": "actually188.app",
+          "query_count": 1
+        },
+        {
+          "domain": "actually746.io",
+          "query_count": 1
+        },
+        {
+          "domain": "add385.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "add564.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "add587.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "add667.app",
+          "query_count": 1
+        },
+        {
+          "domain": "address14.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "administration422.app",
+          "query_count": 1
+        },
+        {
+          "domain": "administration9.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "administration999.app",
+          "query_count": 1
+        },
+        {
+          "domain": "admit534.app",
+          "query_count": 1
+        },
+        {
+          "domain": "affect911.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "again503.io",
+          "query_count": 1
+        },
+        {
+          "domain": "again720.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "against543.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "against620.app",
+          "query_count": 1
+        },
+        {
+          "domain": "age64.app",
+          "query_count": 1
+        },
+        {
+          "domain": "agent382.io",
+          "query_count": 1
+        },
+        {
+          "domain": "ago915.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "agree850.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "agreement289.app",
+          "query_count": 1
+        },
+        {
+          "domain": "agreement352.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "agreement439.app",
+          "query_count": 1
+        },
+        {
+          "domain": "agreement64.app",
+          "query_count": 1
+        },
+        {
+          "domain": "ahead426.io",
+          "query_count": 1
+        },
+        {
+          "domain": "ahead847.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "air471.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "air985.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "all886.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "allow487.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "almost284.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "almost670.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "almost747.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "alone151.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "alone514.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "alone656.app",
+          "query_count": 1
+        },
+        {
+          "domain": "alone707.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "along155.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "already165.app",
+          "query_count": 1
+        },
+        {
+          "domain": "also729.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "also999.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "although713.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "although82.app",
+          "query_count": 1
+        },
+        {
+          "domain": "although887.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "although936.app",
+          "query_count": 1
+        },
+        {
+          "domain": "always105.io",
+          "query_count": 1
+        },
+        {
+          "domain": "always111.app",
+          "query_count": 1
+        },
+        {
+          "domain": "always234.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "always410.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "always604.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "always695.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "american1.io",
+          "query_count": 1
+        },
+        {
+          "domain": "american659.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "american756.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "american813.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "among259.io",
+          "query_count": 1
+        },
+        {
+          "domain": "amount326.app",
+          "query_count": 1
+        },
+        {
+          "domain": "amount37.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "analysis739.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "and265.io",
+          "query_count": 1
+        },
+        {
+          "domain": "and674.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "and819.io",
+          "query_count": 1
+        },
+        {
+          "domain": "animal116.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "another649.app",
+          "query_count": 1
+        },
+        {
+          "domain": "answer782.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "any788.io",
+          "query_count": 1
+        },
+        {
+          "domain": "anyone862.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "anything191.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "anything402.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "anything560.app",
+          "query_count": 1
+        },
+        {
+          "domain": "anything597.io",
+          "query_count": 1
+        },
+        {
+          "domain": "appear232.io",
+          "query_count": 1
+        },
+        {
+          "domain": "appear61.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "appear918.app",
+          "query_count": 1
+        },
+        {
+          "domain": "apply272.app",
+          "query_count": 1
+        },
+        {
+          "domain": "apply62.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "approach148.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "approach421.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "area145.app",
+          "query_count": 1
+        },
+        {
+          "domain": "area238.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "area279.app",
+          "query_count": 1
+        },
+        {
+          "domain": "area753.io",
+          "query_count": 1
+        },
+        {
+          "domain": "arm745.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "around108.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "arrive160.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "article100.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "article248.app",
+          "query_count": 1
+        },
+        {
+          "domain": "artist136.io",
+          "query_count": 1
+        },
+        {
+          "domain": "artist363.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "as860.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "ask174.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "ask65.io",
+          "query_count": 1
+        },
+        {
+          "domain": "ask970.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "assume90.app",
+          "query_count": 1
+        },
+        {
+          "domain": "at528.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "attack425.io",
+          "query_count": 1
+        },
+        {
+          "domain": "attack459.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "attention233.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "attorney72.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "author617.io",
+          "query_count": 1
+        },
+        {
+          "domain": "author894.app",
+          "query_count": 1
+        },
+        {
+          "domain": "authority11.app",
+          "query_count": 1
+        },
+        {
+          "domain": "available338.app",
+          "query_count": 1
+        },
+        {
+          "domain": "available632.app",
+          "query_count": 1
+        },
+        {
+          "domain": "available805.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "available894.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "avoid307.app",
+          "query_count": 1
+        },
+        {
+          "domain": "away328.io",
+          "query_count": 1
+        },
+        {
+          "domain": "away829.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "away917.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bad27.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "ball440.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bank179.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bank521.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "bank618.app",
+          "query_count": 1
+        },
+        {
+          "domain": "bar404.io",
+          "query_count": 1
+        },
+        {
+          "domain": "base647.app",
+          "query_count": 1
+        },
+        {
+          "domain": "be297.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "beat699.io",
+          "query_count": 1
+        },
+        {
+          "domain": "because520.app",
+          "query_count": 1
+        },
+        {
+          "domain": "become182.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "bed194.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bed529.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "begin177.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "begin182.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "begin210.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "begin313.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "begin323.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "begin551.io",
+          "query_count": 1
+        },
+        {
+          "domain": "begin553.io",
+          "query_count": 1
+        },
+        {
+          "domain": "begin615.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "behavior243.app",
+          "query_count": 1
+        },
+        {
+          "domain": "behind716.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "behind97.io",
+          "query_count": 1
+        },
+        {
+          "domain": "believe946.app",
+          "query_count": 1
+        },
+        {
+          "domain": "best62.app",
+          "query_count": 1
+        },
+        {
+          "domain": "better284.io",
+          "query_count": 1
+        },
+        {
+          "domain": "better361.app",
+          "query_count": 1
+        },
+        {
+          "domain": "better542.io",
+          "query_count": 1
+        },
+        {
+          "domain": "between501.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "between961.app",
+          "query_count": 1
+        },
+        {
+          "domain": "beyond670.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "beyond742.io",
+          "query_count": 1
+        },
+        {
+          "domain": "beyond93.io",
+          "query_count": 1
+        },
+        {
+          "domain": "bill746.io",
+          "query_count": 1
+        },
+        {
+          "domain": "billion848.app",
+          "query_count": 1
+        },
+        {
+          "domain": "bit562.app",
+          "query_count": 1
+        },
+        {
+          "domain": "black219.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "blood847.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "blue378.app",
+          "query_count": 1
+        },
+        {
+          "domain": "blue976.io",
+          "query_count": 1
+        },
+        {
+          "domain": "board608.app",
+          "query_count": 1
+        },
+        {
+          "domain": "body397.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "book526.io",
+          "query_count": 1
+        },
+        {
+          "domain": "book744.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "book88.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "boy163.app",
+          "query_count": 1
+        },
+        {
+          "domain": "bring1.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "brother513.io",
+          "query_count": 1
+        },
+        {
+          "domain": "brother739.io",
+          "query_count": 1
+        },
+        {
+          "domain": "budget324.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "budget57.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "budget821.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "budget878.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "budget993.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "build155.cloud",
+          "query_count": 1
+        }
+      ]
+    },
+    {
+      "id": "sess_20260329_120054",
+      "name": "DNS Log \u2014 29 Mar 2026",
+      "uploaded_at": "2026-03-29T12:00:54",
+      "log_lines": 10000,
+      "unique_domains": 1536,
+      "shadow_tools_found": 6,
+      "exposure_score": 75.0,
+      "tool_detections": [
+        {
+          "tool_id": "github_personal",
+          "tool_name": "GitHub (Personal Account)",
+          "category": "Code Repository",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Source code leakage to personal repos",
+            "IP ownership unclear",
+            "Public repo risk"
+          ],
+          "query_count": 575,
+          "unique_ips": 396,
+          "first_seen": "2026-03-22T00:06:11",
+          "last_seen": "2026-03-29T23:38:55",
+          "domains_matched": [
+            "github.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "GitHub Enterprise / Azure DevOps"
+        },
+        {
+          "tool_id": "fiverr",
+          "tool_name": "Fiverr",
+          "category": "Freelance / Procurement",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Unapproved vendor engagement",
+            "IP ownership risk",
+            "Procurement bypass"
+          ],
+          "query_count": 380,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:14:25",
+          "last_seen": "2026-03-29T23:51:28",
+          "domains_matched": [
+            "fiverr.com",
+            "fiverrcdn.com"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "Approved vendor portal"
+        },
+        {
+          "tool_id": "mailchimp",
+          "tool_name": "Mailchimp",
+          "category": "Email Marketing",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Customer data exported to third party",
+            "GDPR consent issues",
+            "Uncontrolled mailing lists"
+          ],
+          "query_count": 373,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:22:32",
+          "last_seen": "2026-03-29T23:59:16",
+          "domains_matched": [
+            "list-manage.com",
+            "mailchimp.com",
+            "mailchimpapp.com"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "Approved CRM email module"
+        },
+        {
+          "tool_id": "trello",
+          "tool_name": "Trello",
+          "category": "Project Management",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Public boards risk",
+            "No SSO enforcement",
+            "Data stored outside corporate systems"
+          ],
+          "query_count": 357,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:24:53",
+          "last_seen": "2026-03-29T23:25:41",
+          "domains_matched": [
+            "atlassian.com",
+            "trello.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Jira / Azure DevOps"
+        },
+        {
+          "tool_id": "chatgpt",
+          "tool_name": "ChatGPT / OpenAI",
+          "category": "AI Tools",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "IP and confidential data exposure",
+            "Training data opt-out unclear",
+            "No corporate data policy"
+          ],
+          "query_count": 351,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:42:43",
+          "last_seen": "2026-03-29T23:37:51",
+          "domains_matched": [
+            "chatgpt.com",
+            "openai.com"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "Microsoft Copilot (Enterprise)"
+        },
+        {
+          "tool_id": "whatsapp",
+          "tool_name": "WhatsApp Business",
+          "category": "Messaging",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "End-to-end encrypted \u2013 no archiving",
+            "External communication uncontrolled",
+            "Data residency unknown"
+          ],
+          "query_count": 328,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:37:10",
+          "last_seen": "2026-03-29T23:22:09",
+          "domains_matched": [
+            "wa.me",
+            "whatsapp.com",
+            "whatsapp.net"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "Microsoft Teams"
+        }
+      ],
+      "unknown_domains": [
+        {
+          "domain": "google.com",
+          "query_count": 702
+        },
+        {
+          "domain": "googleapis.com",
+          "query_count": 402
+        },
+        {
+          "domain": "akamai.com",
+          "query_count": 396
+        },
+        {
+          "domain": "azure.com",
+          "query_count": 396
+        },
+        {
+          "domain": "amazonaws.com",
+          "query_count": 391
+        },
+        {
+          "domain": "microsoft.com",
+          "query_count": 391
+        },
+        {
+          "domain": "windowsupdate.com",
+          "query_count": 384
+        },
+        {
+          "domain": "jsdelivr.net",
+          "query_count": 380
+        },
+        {
+          "domain": "office.com",
+          "query_count": 371
+        },
+        {
+          "domain": "outlook.com",
+          "query_count": 370
+        },
+        {
+          "domain": "cloudflare.com",
+          "query_count": 367
+        },
+        {
+          "domain": "bing.com",
+          "query_count": 357
+        },
+        {
+          "domain": "live.com",
+          "query_count": 357
+        },
+        {
+          "domain": "fastly.net",
+          "query_count": 353
+        },
+        {
+          "domain": "windows.com",
+          "query_count": 342
+        },
+        {
+          "domain": "githubusercontent.com",
+          "query_count": 170
+        },
+        {
+          "domain": "a146.app",
+          "query_count": 1
+        },
+        {
+          "domain": "a493.app",
+          "query_count": 1
+        },
+        {
+          "domain": "a585.io",
+          "query_count": 1
+        },
+        {
+          "domain": "a795.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "able551.io",
+          "query_count": 1
+        },
+        {
+          "domain": "able607.io",
+          "query_count": 1
+        },
+        {
+          "domain": "able777.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "about648.io",
+          "query_count": 1
+        },
+        {
+          "domain": "above224.app",
+          "query_count": 1
+        },
+        {
+          "domain": "above792.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "above914.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "accept601.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "act715.app",
+          "query_count": 1
+        },
+        {
+          "domain": "action207.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "action338.io",
+          "query_count": 1
+        },
+        {
+          "domain": "action443.io",
+          "query_count": 1
+        },
+        {
+          "domain": "action671.io",
+          "query_count": 1
+        },
+        {
+          "domain": "action930.io",
+          "query_count": 1
+        },
+        {
+          "domain": "activity273.app",
+          "query_count": 1
+        },
+        {
+          "domain": "activity457.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "actually53.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "add366.app",
+          "query_count": 1
+        },
+        {
+          "domain": "administration290.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "administration776.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "admit223.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "admit350.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "admit62.io",
+          "query_count": 1
+        },
+        {
+          "domain": "admit678.io",
+          "query_count": 1
+        },
+        {
+          "domain": "adult672.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "adult814.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "adult824.app",
+          "query_count": 1
+        },
+        {
+          "domain": "adult872.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "affect472.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "affect736.app",
+          "query_count": 1
+        },
+        {
+          "domain": "again186.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "again275.app",
+          "query_count": 1
+        },
+        {
+          "domain": "against763.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "against94.io",
+          "query_count": 1
+        },
+        {
+          "domain": "age359.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "age774.io",
+          "query_count": 1
+        },
+        {
+          "domain": "age892.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "age904.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "agency799.io",
+          "query_count": 1
+        },
+        {
+          "domain": "ago32.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "ago553.io",
+          "query_count": 1
+        },
+        {
+          "domain": "agree472.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "ahead952.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "air292.app",
+          "query_count": 1
+        },
+        {
+          "domain": "air798.app",
+          "query_count": 1
+        },
+        {
+          "domain": "allow127.io",
+          "query_count": 1
+        },
+        {
+          "domain": "allow159.app",
+          "query_count": 1
+        },
+        {
+          "domain": "already228.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "already257.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "already929.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "also236.app",
+          "query_count": 1
+        },
+        {
+          "domain": "also498.io",
+          "query_count": 1
+        },
+        {
+          "domain": "although130.io",
+          "query_count": 1
+        },
+        {
+          "domain": "always731.io",
+          "query_count": 1
+        },
+        {
+          "domain": "american840.io",
+          "query_count": 1
+        },
+        {
+          "domain": "among366.io",
+          "query_count": 1
+        },
+        {
+          "domain": "among719.app",
+          "query_count": 1
+        },
+        {
+          "domain": "amount342.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "amount380.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "amount672.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "amount831.app",
+          "query_count": 1
+        },
+        {
+          "domain": "analysis220.app",
+          "query_count": 1
+        },
+        {
+          "domain": "analysis271.app",
+          "query_count": 1
+        },
+        {
+          "domain": "analysis551.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "and238.app",
+          "query_count": 1
+        },
+        {
+          "domain": "and972.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "animal213.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "animal3.io",
+          "query_count": 1
+        },
+        {
+          "domain": "animal767.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "another382.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "answer379.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "any179.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "any88.io",
+          "query_count": 1
+        },
+        {
+          "domain": "anyone212.app",
+          "query_count": 1
+        },
+        {
+          "domain": "anyone610.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "anything521.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "appear32.app",
+          "query_count": 1
+        },
+        {
+          "domain": "appear413.io",
+          "query_count": 1
+        },
+        {
+          "domain": "appear481.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "apply263.app",
+          "query_count": 1
+        },
+        {
+          "domain": "apply264.app",
+          "query_count": 1
+        },
+        {
+          "domain": "approach604.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "arm161.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "arm350.app",
+          "query_count": 1
+        },
+        {
+          "domain": "arm623.app",
+          "query_count": 1
+        },
+        {
+          "domain": "arrive726.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "art144.io",
+          "query_count": 1
+        },
+        {
+          "domain": "article921.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "artist304.app",
+          "query_count": 1
+        },
+        {
+          "domain": "ask419.io",
+          "query_count": 1
+        },
+        {
+          "domain": "ask511.io",
+          "query_count": 1
+        },
+        {
+          "domain": "ask935.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "assume116.io",
+          "query_count": 1
+        },
+        {
+          "domain": "assume782.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "at759.io",
+          "query_count": 1
+        },
+        {
+          "domain": "at985.app",
+          "query_count": 1
+        },
+        {
+          "domain": "attention642.app",
+          "query_count": 1
+        },
+        {
+          "domain": "attention649.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "attention668.io",
+          "query_count": 1
+        },
+        {
+          "domain": "attorney541.io",
+          "query_count": 1
+        },
+        {
+          "domain": "author308.app",
+          "query_count": 1
+        },
+        {
+          "domain": "author680.app",
+          "query_count": 1
+        },
+        {
+          "domain": "authority135.app",
+          "query_count": 1
+        },
+        {
+          "domain": "authority232.app",
+          "query_count": 1
+        },
+        {
+          "domain": "available113.app",
+          "query_count": 1
+        },
+        {
+          "domain": "away54.app",
+          "query_count": 1
+        },
+        {
+          "domain": "away929.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "back531.app",
+          "query_count": 1
+        },
+        {
+          "domain": "bad977.io",
+          "query_count": 1
+        },
+        {
+          "domain": "bag252.io",
+          "query_count": 1
+        },
+        {
+          "domain": "bag490.app",
+          "query_count": 1
+        },
+        {
+          "domain": "ball699.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "ball919.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bank31.io",
+          "query_count": 1
+        },
+        {
+          "domain": "bank885.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bar325.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "bar361.app",
+          "query_count": 1
+        },
+        {
+          "domain": "base14.io",
+          "query_count": 1
+        },
+        {
+          "domain": "base418.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "base516.io",
+          "query_count": 1
+        },
+        {
+          "domain": "base705.io",
+          "query_count": 1
+        },
+        {
+          "domain": "base940.app",
+          "query_count": 1
+        },
+        {
+          "domain": "be991.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "beat881.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "beautiful53.app",
+          "query_count": 1
+        },
+        {
+          "domain": "become104.io",
+          "query_count": 1
+        },
+        {
+          "domain": "become526.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bed205.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "begin173.io",
+          "query_count": 1
+        },
+        {
+          "domain": "behavior189.app",
+          "query_count": 1
+        },
+        {
+          "domain": "behind187.io",
+          "query_count": 1
+        },
+        {
+          "domain": "behind285.app",
+          "query_count": 1
+        },
+        {
+          "domain": "behind744.app",
+          "query_count": 1
+        },
+        {
+          "domain": "behind789.app",
+          "query_count": 1
+        },
+        {
+          "domain": "believe368.io",
+          "query_count": 1
+        },
+        {
+          "domain": "benefit182.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "benefit205.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "better995.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "big379.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "big979.app",
+          "query_count": 1
+        },
+        {
+          "domain": "billion498.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bit464.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bit648.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bit839.app",
+          "query_count": 1
+        },
+        {
+          "domain": "blue159.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "blue592.app",
+          "query_count": 1
+        },
+        {
+          "domain": "blue877.io",
+          "query_count": 1
+        },
+        {
+          "domain": "board256.app",
+          "query_count": 1
+        },
+        {
+          "domain": "board661.io",
+          "query_count": 1
+        },
+        {
+          "domain": "book394.app",
+          "query_count": 1
+        },
+        {
+          "domain": "book712.io",
+          "query_count": 1
+        },
+        {
+          "domain": "born778.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "both919.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "both962.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "box342.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "box382.app",
+          "query_count": 1
+        },
+        {
+          "domain": "box68.io",
+          "query_count": 1
+        },
+        {
+          "domain": "box711.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "boy787.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "break729.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "brother121.io",
+          "query_count": 1
+        },
+        {
+          "domain": "brother299.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "brother517.app",
+          "query_count": 1
+        },
+        {
+          "domain": "brother764.io",
+          "query_count": 1
+        },
+        {
+          "domain": "budget551.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "build619.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "business39.app",
+          "query_count": 1
+        },
+        {
+          "domain": "business920.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "buy475.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "by309.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "by459.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "call152.io",
+          "query_count": 1
+        },
+        {
+          "domain": "camera70.io",
+          "query_count": 1
+        },
+        {
+          "domain": "camera822.io",
+          "query_count": 1
+        },
+        {
+          "domain": "camera837.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "camera915.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "can354.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "can447.io",
+          "query_count": 1
+        },
+        {
+          "domain": "can90.app",
+          "query_count": 1
+        },
+        {
+          "domain": "capital147.tech",
+          "query_count": 1
+        }
+      ]
+    },
+    {
+      "id": "sess_20260329_132637",
+      "name": "DNS Log \u2014 29 Mar 2026",
+      "uploaded_at": "2026-03-29T13:26:37",
+      "log_lines": 10000,
+      "unique_domains": 1486,
+      "shadow_tools_found": 9,
+      "exposure_score": 39.26,
+      "tool_detections": [
+        {
+          "tool_id": "github_personal",
+          "tool_name": "GitHub (Personal Account)",
+          "category": "Code Repository",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Source code leakage to personal repos",
+            "IP ownership unclear",
+            "Public repo risk"
+          ],
+          "query_count": 386,
+          "unique_ips": 386,
+          "first_seen": "2026-03-22T00:17:47",
+          "last_seen": "2026-03-29T23:22:46",
+          "domains_matched": [
+            "github.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "GitHub Enterprise / Azure DevOps"
+        },
+        {
+          "tool_id": "slack",
+          "tool_name": "Slack (Unauthorised Workspace)",
+          "category": "Messaging",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Multiple workspaces not controlled",
+            "File sharing unmonitored"
+          ],
+          "query_count": 348,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:00:29",
+          "last_seen": "2026-03-29T23:56:14",
+          "domains_matched": [
+            "slack-edge.com",
+            "slack-imgs.com",
+            "slack.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Microsoft Teams"
+        },
+        {
+          "tool_id": "zoom",
+          "tool_name": "Zoom (Personal Account)",
+          "category": "Video Conferencing",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Recording storage outside corporate control",
+            "Personal accounts unmanaged"
+          ],
+          "query_count": 313,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:28:00",
+          "last_seen": "2026-03-29T22:18:23",
+          "domains_matched": [
+            "zmb.cz",
+            "zoom.com",
+            "zoom.us"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Microsoft Teams / Webex"
+        },
+        {
+          "tool_id": "canva",
+          "tool_name": "Canva",
+          "category": "Design Tools",
+          "risk_level": "LOW",
+          "risk_reasons": [
+            "Brand guideline violations possible"
+          ],
+          "query_count": 311,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:23:42",
+          "last_seen": "2026-03-29T22:29:38",
+          "domains_matched": [
+            "canva.cn",
+            "canva.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Adobe Creative Cloud"
+        },
+        {
+          "tool_id": "notion",
+          "tool_name": "Notion",
+          "category": "Productivity",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Data outside corporate boundary",
+            "Sharing controls vary by plan"
+          ],
+          "query_count": 308,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:26:23",
+          "last_seen": "2026-03-29T23:13:03",
+          "domains_matched": [
+            "notion.com",
+            "notion.so"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Confluence / SharePoint"
+        },
+        {
+          "tool_id": "mailchimp",
+          "tool_name": "Mailchimp",
+          "category": "Email Marketing",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Customer data exported to third party",
+            "GDPR consent issues",
+            "Uncontrolled mailing lists"
+          ],
+          "query_count": 307,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T01:49:06",
+          "last_seen": "2026-03-29T23:19:03",
+          "domains_matched": [
+            "list-manage.com",
+            "mailchimp.com",
+            "mailchimpapp.com"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "Approved CRM email module"
+        },
+        {
+          "tool_id": "loom",
+          "tool_name": "Loom",
+          "category": "Video Messaging",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Screen recordings may capture sensitive data",
+            "External sharing uncontrolled"
+          ],
+          "query_count": 305,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:06:34",
+          "last_seen": "2026-03-29T23:54:10",
+          "domains_matched": [
+            "loom.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Microsoft Stream"
+        },
+        {
+          "tool_id": "airtable",
+          "tool_name": "Airtable",
+          "category": "Database / Spreadsheet",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Spreadsheet/DB data outside corporate systems",
+            "Sharing permissions uncontrolled"
+          ],
+          "query_count": 288,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:00:47",
+          "last_seen": "2026-03-29T23:23:09",
+          "domains_matched": [
+            "airtable.com"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "SharePoint Lists / Azure SQL"
+        },
+        {
+          "tool_id": "whatsapp",
+          "tool_name": "WhatsApp Business",
+          "category": "Messaging",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "End-to-end encrypted \u2013 no archiving",
+            "External communication uncontrolled",
+            "Data residency unknown"
+          ],
+          "query_count": 279,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:16:27",
+          "last_seen": "2026-03-29T23:44:12",
+          "domains_matched": [
+            "wa.me",
+            "whatsapp.com",
+            "whatsapp.net"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "Microsoft Teams"
+        }
+      ],
+      "unknown_domains": [
+        {
+          "domain": "amazonaws.com",
+          "query_count": 425
+        },
+        {
+          "domain": "outlook.com",
+          "query_count": 414
+        },
+        {
+          "domain": "windowsupdate.com",
+          "query_count": 413
+        },
+        {
+          "domain": "microsoft.com",
+          "query_count": 409
+        },
+        {
+          "domain": "google.com",
+          "query_count": 402
+        },
+        {
+          "domain": "live.com",
+          "query_count": 387
+        },
+        {
+          "domain": "jsdelivr.net",
+          "query_count": 382
+        },
+        {
+          "domain": "cloudflare.com",
+          "query_count": 379
+        },
+        {
+          "domain": "bing.com",
+          "query_count": 377
+        },
+        {
+          "domain": "windows.com",
+          "query_count": 366
+        },
+        {
+          "domain": "azure.com",
+          "query_count": 361
+        },
+        {
+          "domain": "office.com",
+          "query_count": 361
+        },
+        {
+          "domain": "akamai.com",
+          "query_count": 354
+        },
+        {
+          "domain": "googleapis.com",
+          "query_count": 341
+        },
+        {
+          "domain": "fastly.net",
+          "query_count": 332
+        },
+        {
+          "domain": "a298.app",
+          "query_count": 1
+        },
+        {
+          "domain": "a894.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "ability858.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "about350.app",
+          "query_count": 1
+        },
+        {
+          "domain": "about881.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "above745.io",
+          "query_count": 1
+        },
+        {
+          "domain": "accept869.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "according60.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "across360.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "act22.io",
+          "query_count": 1
+        },
+        {
+          "domain": "act441.io",
+          "query_count": 1
+        },
+        {
+          "domain": "act574.io",
+          "query_count": 1
+        },
+        {
+          "domain": "act657.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "action63.app",
+          "query_count": 1
+        },
+        {
+          "domain": "activity244.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "activity757.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "activity870.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "add339.io",
+          "query_count": 1
+        },
+        {
+          "domain": "add563.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "add728.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "address195.io",
+          "query_count": 1
+        },
+        {
+          "domain": "address286.io",
+          "query_count": 1
+        },
+        {
+          "domain": "address909.io",
+          "query_count": 1
+        },
+        {
+          "domain": "administration333.io",
+          "query_count": 1
+        },
+        {
+          "domain": "administration670.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "administration804.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "admit919.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "adult119.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "adult325.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "affect819.io",
+          "query_count": 1
+        },
+        {
+          "domain": "again601.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "against224.app",
+          "query_count": 1
+        },
+        {
+          "domain": "age135.io",
+          "query_count": 1
+        },
+        {
+          "domain": "age290.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "agency387.app",
+          "query_count": 1
+        },
+        {
+          "domain": "agent557.io",
+          "query_count": 1
+        },
+        {
+          "domain": "ago428.app",
+          "query_count": 1
+        },
+        {
+          "domain": "agree783.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "ahead391.app",
+          "query_count": 1
+        },
+        {
+          "domain": "ahead59.io",
+          "query_count": 1
+        },
+        {
+          "domain": "air558.app",
+          "query_count": 1
+        },
+        {
+          "domain": "all625.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "all652.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "all878.io",
+          "query_count": 1
+        },
+        {
+          "domain": "allow239.app",
+          "query_count": 1
+        },
+        {
+          "domain": "alone309.io",
+          "query_count": 1
+        },
+        {
+          "domain": "alone847.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "along415.app",
+          "query_count": 1
+        },
+        {
+          "domain": "along439.app",
+          "query_count": 1
+        },
+        {
+          "domain": "along46.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "along555.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "already981.io",
+          "query_count": 1
+        },
+        {
+          "domain": "also618.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "although798.io",
+          "query_count": 1
+        },
+        {
+          "domain": "although889.io",
+          "query_count": 1
+        },
+        {
+          "domain": "always18.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "american115.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "american464.app",
+          "query_count": 1
+        },
+        {
+          "domain": "among153.app",
+          "query_count": 1
+        },
+        {
+          "domain": "amount502.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "analysis264.app",
+          "query_count": 1
+        },
+        {
+          "domain": "analysis373.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "analysis476.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "and150.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "and6.io",
+          "query_count": 1
+        },
+        {
+          "domain": "animal191.app",
+          "query_count": 1
+        },
+        {
+          "domain": "animal569.app",
+          "query_count": 1
+        },
+        {
+          "domain": "another564.app",
+          "query_count": 1
+        },
+        {
+          "domain": "another964.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "answer389.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "any923.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "anyone325.app",
+          "query_count": 1
+        },
+        {
+          "domain": "anyone382.io",
+          "query_count": 1
+        },
+        {
+          "domain": "anyone853.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "anything384.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "anything598.io",
+          "query_count": 1
+        },
+        {
+          "domain": "anything606.io",
+          "query_count": 1
+        },
+        {
+          "domain": "appear892.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "apply250.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "apply763.io",
+          "query_count": 1
+        },
+        {
+          "domain": "approach40.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "arm479.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "around443.app",
+          "query_count": 1
+        },
+        {
+          "domain": "around610.io",
+          "query_count": 1
+        },
+        {
+          "domain": "around643.io",
+          "query_count": 1
+        },
+        {
+          "domain": "arrive450.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "arrive740.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "art64.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "article273.app",
+          "query_count": 1
+        },
+        {
+          "domain": "article893.io",
+          "query_count": 1
+        },
+        {
+          "domain": "as217.app",
+          "query_count": 1
+        },
+        {
+          "domain": "as403.app",
+          "query_count": 1
+        },
+        {
+          "domain": "ask885.io",
+          "query_count": 1
+        },
+        {
+          "domain": "assume796.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "assume916.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "at283.io",
+          "query_count": 1
+        },
+        {
+          "domain": "at466.io",
+          "query_count": 1
+        },
+        {
+          "domain": "at583.io",
+          "query_count": 1
+        },
+        {
+          "domain": "at954.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "attack348.io",
+          "query_count": 1
+        },
+        {
+          "domain": "attack561.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "audience556.app",
+          "query_count": 1
+        },
+        {
+          "domain": "audience597.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "author50.io",
+          "query_count": 1
+        },
+        {
+          "domain": "author713.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "authority339.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "authority463.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "authority500.app",
+          "query_count": 1
+        },
+        {
+          "domain": "avoid625.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "avoid818.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "away221.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "away557.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "baby402.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bag574.app",
+          "query_count": 1
+        },
+        {
+          "domain": "bag738.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "ball108.io",
+          "query_count": 1
+        },
+        {
+          "domain": "ball509.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "ball920.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bank486.app",
+          "query_count": 1
+        },
+        {
+          "domain": "bank959.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "bar541.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "be606.app",
+          "query_count": 1
+        },
+        {
+          "domain": "be73.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "be774.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "beat520.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "beautiful223.io",
+          "query_count": 1
+        },
+        {
+          "domain": "beautiful298.app",
+          "query_count": 1
+        },
+        {
+          "domain": "because408.io",
+          "query_count": 1
+        },
+        {
+          "domain": "become131.io",
+          "query_count": 1
+        },
+        {
+          "domain": "become357.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bed488.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "bed687.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "begin134.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "begin412.app",
+          "query_count": 1
+        },
+        {
+          "domain": "behind875.io",
+          "query_count": 1
+        },
+        {
+          "domain": "believe918.io",
+          "query_count": 1
+        },
+        {
+          "domain": "believe934.io",
+          "query_count": 1
+        },
+        {
+          "domain": "benefit207.io",
+          "query_count": 1
+        },
+        {
+          "domain": "benefit498.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "benefit618.app",
+          "query_count": 1
+        },
+        {
+          "domain": "best109.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "best514.io",
+          "query_count": 1
+        },
+        {
+          "domain": "best948.io",
+          "query_count": 1
+        },
+        {
+          "domain": "better212.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "better55.app",
+          "query_count": 1
+        },
+        {
+          "domain": "between373.app",
+          "query_count": 1
+        },
+        {
+          "domain": "between647.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "big94.app",
+          "query_count": 1
+        },
+        {
+          "domain": "bill374.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "bill495.io",
+          "query_count": 1
+        },
+        {
+          "domain": "bill84.app",
+          "query_count": 1
+        },
+        {
+          "domain": "billion122.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "billion126.io",
+          "query_count": 1
+        },
+        {
+          "domain": "billion670.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bit738.io",
+          "query_count": 1
+        },
+        {
+          "domain": "black854.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "blood230.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "blood557.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "board950.io",
+          "query_count": 1
+        },
+        {
+          "domain": "born370.app",
+          "query_count": 1
+        },
+        {
+          "domain": "both64.io",
+          "query_count": 1
+        },
+        {
+          "domain": "boy144.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "boy477.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "boy507.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "break73.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bring291.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bring794.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "build638.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "build708.io",
+          "query_count": 1
+        },
+        {
+          "domain": "building263.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "building274.app",
+          "query_count": 1
+        },
+        {
+          "domain": "business820.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "business825.io",
+          "query_count": 1
+        },
+        {
+          "domain": "but195.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "buy153.io",
+          "query_count": 1
+        },
+        {
+          "domain": "buy264.io",
+          "query_count": 1
+        },
+        {
+          "domain": "call136.app",
+          "query_count": 1
+        },
+        {
+          "domain": "call663.io",
+          "query_count": 1
+        },
+        {
+          "domain": "camera369.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "camera841.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "camera885.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "campaign282.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "can258.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "can900.app",
+          "query_count": 1
+        },
+        {
+          "domain": "candidate559.cloud",
+          "query_count": 1
+        }
+      ]
+    },
+    {
+      "id": "sess_20260329_133645",
+      "name": "DNS Log \u2014 29 Mar 2026",
+      "uploaded_at": "2026-03-29T13:36:45",
+      "log_lines": 10000,
+      "unique_domains": 1486,
+      "shadow_tools_found": 9,
+      "exposure_score": 39.26,
+      "tool_detections": [
+        {
+          "tool_id": "github_personal",
+          "tool_name": "GitHub (Personal Account)",
+          "category": "Code Repository",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Source code leakage to personal repos",
+            "IP ownership unclear",
+            "Public repo risk"
+          ],
+          "query_count": 386,
+          "unique_ips": 386,
+          "first_seen": "2026-03-22T00:17:47",
+          "last_seen": "2026-03-29T23:22:46",
+          "domains_matched": [
+            "github.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "GitHub Enterprise / Azure DevOps"
+        },
+        {
+          "tool_id": "slack",
+          "tool_name": "Slack (Unauthorised Workspace)",
+          "category": "Messaging",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Multiple workspaces not controlled",
+            "File sharing unmonitored"
+          ],
+          "query_count": 348,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:00:29",
+          "last_seen": "2026-03-29T23:56:14",
+          "domains_matched": [
+            "slack-edge.com",
+            "slack-imgs.com",
+            "slack.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Microsoft Teams"
+        },
+        {
+          "tool_id": "zoom",
+          "tool_name": "Zoom (Personal Account)",
+          "category": "Video Conferencing",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Recording storage outside corporate control",
+            "Personal accounts unmanaged"
+          ],
+          "query_count": 313,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:28:00",
+          "last_seen": "2026-03-29T22:18:23",
+          "domains_matched": [
+            "zmb.cz",
+            "zoom.com",
+            "zoom.us"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Microsoft Teams / Webex"
+        },
+        {
+          "tool_id": "canva",
+          "tool_name": "Canva",
+          "category": "Design Tools",
+          "risk_level": "LOW",
+          "risk_reasons": [
+            "Brand guideline violations possible"
+          ],
+          "query_count": 311,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:23:42",
+          "last_seen": "2026-03-29T22:29:38",
+          "domains_matched": [
+            "canva.cn",
+            "canva.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Adobe Creative Cloud"
+        },
+        {
+          "tool_id": "notion",
+          "tool_name": "Notion",
+          "category": "Productivity",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Data outside corporate boundary",
+            "Sharing controls vary by plan"
+          ],
+          "query_count": 308,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:26:23",
+          "last_seen": "2026-03-29T23:13:03",
+          "domains_matched": [
+            "notion.com",
+            "notion.so"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Confluence / SharePoint"
+        },
+        {
+          "tool_id": "mailchimp",
+          "tool_name": "Mailchimp",
+          "category": "Email Marketing",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Customer data exported to third party",
+            "GDPR consent issues",
+            "Uncontrolled mailing lists"
+          ],
+          "query_count": 307,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T01:49:06",
+          "last_seen": "2026-03-29T23:19:03",
+          "domains_matched": [
+            "list-manage.com",
+            "mailchimp.com",
+            "mailchimpapp.com"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "Approved CRM email module"
+        },
+        {
+          "tool_id": "loom",
+          "tool_name": "Loom",
+          "category": "Video Messaging",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Screen recordings may capture sensitive data",
+            "External sharing uncontrolled"
+          ],
+          "query_count": 305,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:06:34",
+          "last_seen": "2026-03-29T23:54:10",
+          "domains_matched": [
+            "loom.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Microsoft Stream"
+        },
+        {
+          "tool_id": "airtable",
+          "tool_name": "Airtable",
+          "category": "Database / Spreadsheet",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Spreadsheet/DB data outside corporate systems",
+            "Sharing permissions uncontrolled"
+          ],
+          "query_count": 288,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:00:47",
+          "last_seen": "2026-03-29T23:23:09",
+          "domains_matched": [
+            "airtable.com"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "SharePoint Lists / Azure SQL"
+        },
+        {
+          "tool_id": "whatsapp",
+          "tool_name": "WhatsApp Business",
+          "category": "Messaging",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "End-to-end encrypted \u2013 no archiving",
+            "External communication uncontrolled",
+            "Data residency unknown"
+          ],
+          "query_count": 279,
+          "unique_ips": 5,
+          "first_seen": "2026-03-22T00:16:27",
+          "last_seen": "2026-03-29T23:44:12",
+          "domains_matched": [
+            "wa.me",
+            "whatsapp.com",
+            "whatsapp.net"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "Microsoft Teams"
+        }
+      ],
+      "unknown_domains": [
+        {
+          "domain": "amazonaws.com",
+          "query_count": 425
+        },
+        {
+          "domain": "outlook.com",
+          "query_count": 414
+        },
+        {
+          "domain": "windowsupdate.com",
+          "query_count": 413
+        },
+        {
+          "domain": "microsoft.com",
+          "query_count": 409
+        },
+        {
+          "domain": "google.com",
+          "query_count": 402
+        },
+        {
+          "domain": "live.com",
+          "query_count": 387
+        },
+        {
+          "domain": "jsdelivr.net",
+          "query_count": 382
+        },
+        {
+          "domain": "cloudflare.com",
+          "query_count": 379
+        },
+        {
+          "domain": "bing.com",
+          "query_count": 377
+        },
+        {
+          "domain": "windows.com",
+          "query_count": 366
+        },
+        {
+          "domain": "azure.com",
+          "query_count": 361
+        },
+        {
+          "domain": "office.com",
+          "query_count": 361
+        },
+        {
+          "domain": "akamai.com",
+          "query_count": 354
+        },
+        {
+          "domain": "googleapis.com",
+          "query_count": 341
+        },
+        {
+          "domain": "fastly.net",
+          "query_count": 332
+        },
+        {
+          "domain": "a298.app",
+          "query_count": 1
+        },
+        {
+          "domain": "a894.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "ability858.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "about350.app",
+          "query_count": 1
+        },
+        {
+          "domain": "about881.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "above745.io",
+          "query_count": 1
+        },
+        {
+          "domain": "accept869.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "according60.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "across360.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "act22.io",
+          "query_count": 1
+        },
+        {
+          "domain": "act441.io",
+          "query_count": 1
+        },
+        {
+          "domain": "act574.io",
+          "query_count": 1
+        },
+        {
+          "domain": "act657.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "action63.app",
+          "query_count": 1
+        },
+        {
+          "domain": "activity244.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "activity757.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "activity870.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "add339.io",
+          "query_count": 1
+        },
+        {
+          "domain": "add563.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "add728.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "address195.io",
+          "query_count": 1
+        },
+        {
+          "domain": "address286.io",
+          "query_count": 1
+        },
+        {
+          "domain": "address909.io",
+          "query_count": 1
+        },
+        {
+          "domain": "administration333.io",
+          "query_count": 1
+        },
+        {
+          "domain": "administration670.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "administration804.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "admit919.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "adult119.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "adult325.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "affect819.io",
+          "query_count": 1
+        },
+        {
+          "domain": "again601.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "against224.app",
+          "query_count": 1
+        },
+        {
+          "domain": "age135.io",
+          "query_count": 1
+        },
+        {
+          "domain": "age290.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "agency387.app",
+          "query_count": 1
+        },
+        {
+          "domain": "agent557.io",
+          "query_count": 1
+        },
+        {
+          "domain": "ago428.app",
+          "query_count": 1
+        },
+        {
+          "domain": "agree783.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "ahead391.app",
+          "query_count": 1
+        },
+        {
+          "domain": "ahead59.io",
+          "query_count": 1
+        },
+        {
+          "domain": "air558.app",
+          "query_count": 1
+        },
+        {
+          "domain": "all625.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "all652.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "all878.io",
+          "query_count": 1
+        },
+        {
+          "domain": "allow239.app",
+          "query_count": 1
+        },
+        {
+          "domain": "alone309.io",
+          "query_count": 1
+        },
+        {
+          "domain": "alone847.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "along415.app",
+          "query_count": 1
+        },
+        {
+          "domain": "along439.app",
+          "query_count": 1
+        },
+        {
+          "domain": "along46.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "along555.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "already981.io",
+          "query_count": 1
+        },
+        {
+          "domain": "also618.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "although798.io",
+          "query_count": 1
+        },
+        {
+          "domain": "although889.io",
+          "query_count": 1
+        },
+        {
+          "domain": "always18.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "american115.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "american464.app",
+          "query_count": 1
+        },
+        {
+          "domain": "among153.app",
+          "query_count": 1
+        },
+        {
+          "domain": "amount502.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "analysis264.app",
+          "query_count": 1
+        },
+        {
+          "domain": "analysis373.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "analysis476.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "and150.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "and6.io",
+          "query_count": 1
+        },
+        {
+          "domain": "animal191.app",
+          "query_count": 1
+        },
+        {
+          "domain": "animal569.app",
+          "query_count": 1
+        },
+        {
+          "domain": "another564.app",
+          "query_count": 1
+        },
+        {
+          "domain": "another964.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "answer389.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "any923.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "anyone325.app",
+          "query_count": 1
+        },
+        {
+          "domain": "anyone382.io",
+          "query_count": 1
+        },
+        {
+          "domain": "anyone853.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "anything384.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "anything598.io",
+          "query_count": 1
+        },
+        {
+          "domain": "anything606.io",
+          "query_count": 1
+        },
+        {
+          "domain": "appear892.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "apply250.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "apply763.io",
+          "query_count": 1
+        },
+        {
+          "domain": "approach40.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "arm479.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "around443.app",
+          "query_count": 1
+        },
+        {
+          "domain": "around610.io",
+          "query_count": 1
+        },
+        {
+          "domain": "around643.io",
+          "query_count": 1
+        },
+        {
+          "domain": "arrive450.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "arrive740.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "art64.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "article273.app",
+          "query_count": 1
+        },
+        {
+          "domain": "article893.io",
+          "query_count": 1
+        },
+        {
+          "domain": "as217.app",
+          "query_count": 1
+        },
+        {
+          "domain": "as403.app",
+          "query_count": 1
+        },
+        {
+          "domain": "ask885.io",
+          "query_count": 1
+        },
+        {
+          "domain": "assume796.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "assume916.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "at283.io",
+          "query_count": 1
+        },
+        {
+          "domain": "at466.io",
+          "query_count": 1
+        },
+        {
+          "domain": "at583.io",
+          "query_count": 1
+        },
+        {
+          "domain": "at954.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "attack348.io",
+          "query_count": 1
+        },
+        {
+          "domain": "attack561.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "audience556.app",
+          "query_count": 1
+        },
+        {
+          "domain": "audience597.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "author50.io",
+          "query_count": 1
+        },
+        {
+          "domain": "author713.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "authority339.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "authority463.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "authority500.app",
+          "query_count": 1
+        },
+        {
+          "domain": "avoid625.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "avoid818.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "away221.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "away557.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "baby402.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bag574.app",
+          "query_count": 1
+        },
+        {
+          "domain": "bag738.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "ball108.io",
+          "query_count": 1
+        },
+        {
+          "domain": "ball509.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "ball920.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bank486.app",
+          "query_count": 1
+        },
+        {
+          "domain": "bank959.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "bar541.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "be606.app",
+          "query_count": 1
+        },
+        {
+          "domain": "be73.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "be774.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "beat520.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "beautiful223.io",
+          "query_count": 1
+        },
+        {
+          "domain": "beautiful298.app",
+          "query_count": 1
+        },
+        {
+          "domain": "because408.io",
+          "query_count": 1
+        },
+        {
+          "domain": "become131.io",
+          "query_count": 1
+        },
+        {
+          "domain": "become357.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bed488.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "bed687.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "begin134.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "begin412.app",
+          "query_count": 1
+        },
+        {
+          "domain": "behind875.io",
+          "query_count": 1
+        },
+        {
+          "domain": "believe918.io",
+          "query_count": 1
+        },
+        {
+          "domain": "believe934.io",
+          "query_count": 1
+        },
+        {
+          "domain": "benefit207.io",
+          "query_count": 1
+        },
+        {
+          "domain": "benefit498.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "benefit618.app",
+          "query_count": 1
+        },
+        {
+          "domain": "best109.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "best514.io",
+          "query_count": 1
+        },
+        {
+          "domain": "best948.io",
+          "query_count": 1
+        },
+        {
+          "domain": "better212.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "better55.app",
+          "query_count": 1
+        },
+        {
+          "domain": "between373.app",
+          "query_count": 1
+        },
+        {
+          "domain": "between647.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "big94.app",
+          "query_count": 1
+        },
+        {
+          "domain": "bill374.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "bill495.io",
+          "query_count": 1
+        },
+        {
+          "domain": "bill84.app",
+          "query_count": 1
+        },
+        {
+          "domain": "billion122.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "billion126.io",
+          "query_count": 1
+        },
+        {
+          "domain": "billion670.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bit738.io",
+          "query_count": 1
+        },
+        {
+          "domain": "black854.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "blood230.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "blood557.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "board950.io",
+          "query_count": 1
+        },
+        {
+          "domain": "born370.app",
+          "query_count": 1
+        },
+        {
+          "domain": "both64.io",
+          "query_count": 1
+        },
+        {
+          "domain": "boy144.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "boy477.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "boy507.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "break73.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bring291.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "bring794.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "build638.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "build708.io",
+          "query_count": 1
+        },
+        {
+          "domain": "building263.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "building274.app",
+          "query_count": 1
+        },
+        {
+          "domain": "business820.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "business825.io",
+          "query_count": 1
+        },
+        {
+          "domain": "but195.cloud",
+          "query_count": 1
+        },
+        {
+          "domain": "buy153.io",
+          "query_count": 1
+        },
+        {
+          "domain": "buy264.io",
+          "query_count": 1
+        },
+        {
+          "domain": "call136.app",
+          "query_count": 1
+        },
+        {
+          "domain": "call663.io",
+          "query_count": 1
+        },
+        {
+          "domain": "camera369.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "camera841.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "camera885.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "campaign282.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "can258.tech",
+          "query_count": 1
+        },
+        {
+          "domain": "can900.app",
+          "query_count": 1
+        },
+        {
+          "domain": "candidate559.cloud",
+          "query_count": 1
+        }
+      ]
+    },
+    {
+      "id": "sess_20260329_133900",
+      "name": "DNS Log \u2014 29 Mar 2026",
+      "uploaded_at": "2026-03-29T13:39:00",
+      "log_lines": 100,
+      "unique_domains": 42,
+      "shadow_tools_found": 8,
+      "exposure_score": 19.79,
+      "tool_detections": [
+        {
+          "tool_id": "trello",
+          "tool_name": "Trello",
+          "category": "Project Management",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Public boards risk",
+            "No SSO enforcement",
+            "Data stored outside corporate systems"
+          ],
+          "query_count": 9,
+          "unique_ips": 7,
+          "first_seen": "2026-03-29T10:15:00",
+          "last_seen": "2026-03-29T11:13:00",
+          "domains_matched": [
+            "atlassian.com",
+            "trello.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Jira / Azure DevOps"
+        },
+        {
+          "tool_id": "loom",
+          "tool_name": "Loom",
+          "category": "Video Messaging",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Screen recordings may capture sensitive data",
+            "External sharing uncontrolled"
+          ],
+          "query_count": 3,
+          "unique_ips": 3,
+          "first_seen": "2026-03-29T10:16:00",
+          "last_seen": "2026-03-29T11:06:00",
+          "domains_matched": [
+            "loom.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Microsoft Stream"
+        },
+        {
+          "tool_id": "dropbox",
+          "tool_name": "Dropbox",
+          "category": "File Storage",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Unauthorised data egress",
+            "No DLP controls",
+            "Personal accounts uncontrolled"
+          ],
+          "query_count": 2,
+          "unique_ips": 2,
+          "first_seen": "2026-03-29T11:06:00",
+          "last_seen": "2026-03-29T11:14:00",
+          "domains_matched": [
+            "dropbox.com"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "SharePoint / OneDrive"
+        },
+        {
+          "tool_id": "github_personal",
+          "tool_name": "GitHub (Personal Account)",
+          "category": "Code Repository",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Source code leakage to personal repos",
+            "IP ownership unclear",
+            "Public repo risk"
+          ],
+          "query_count": 2,
+          "unique_ips": 2,
+          "first_seen": "2026-03-29T10:16:00",
+          "last_seen": "2026-03-29T10:33:00",
+          "domains_matched": [
+            "github.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "GitHub Enterprise / Azure DevOps"
+        },
+        {
+          "tool_id": "slack",
+          "tool_name": "Slack (Unauthorised Workspace)",
+          "category": "Messaging",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Multiple workspaces not controlled",
+            "File sharing unmonitored"
+          ],
+          "query_count": 2,
+          "unique_ips": 2,
+          "first_seen": "2026-03-29T11:07:00",
+          "last_seen": "2026-03-29T11:08:00",
+          "domains_matched": [
+            "slack.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Microsoft Teams"
+        },
+        {
+          "tool_id": "mailchimp",
+          "tool_name": "Mailchimp",
+          "category": "Email Marketing",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Customer data exported to third party",
+            "GDPR consent issues",
+            "Uncontrolled mailing lists"
+          ],
+          "query_count": 1,
+          "unique_ips": 1,
+          "first_seen": "2026-03-29T10:20:00",
+          "last_seen": "2026-03-29T10:20:00",
+          "domains_matched": [
+            "mailchimp.com"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "Approved CRM email module"
+        },
+        {
+          "tool_id": "notion",
+          "tool_name": "Notion",
+          "category": "Productivity",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Data outside corporate boundary",
+            "Sharing controls vary by plan"
+          ],
+          "query_count": 1,
+          "unique_ips": 1,
+          "first_seen": "2026-03-29T10:33:00",
+          "last_seen": "2026-03-29T10:33:00",
+          "domains_matched": [
+            "notion.so"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Confluence / SharePoint"
+        },
+        {
+          "tool_id": "zoom",
+          "tool_name": "Zoom (Personal Account)",
+          "category": "Video Conferencing",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Recording storage outside corporate control",
+            "Personal accounts unmanaged"
+          ],
+          "query_count": 1,
+          "unique_ips": 1,
+          "first_seen": "2026-03-29T10:19:00",
+          "last_seen": "2026-03-29T10:19:00",
+          "domains_matched": [
+            "zoom.us"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Microsoft Teams / Webex"
+        }
+      ],
+      "unknown_domains": [
+        {
+          "domain": "freshdesk.com",
+          "query_count": 5
+        },
+        {
+          "domain": "twilio.com",
+          "query_count": 5
+        },
+        {
+          "domain": "asana.com",
+          "query_count": 4
+        },
+        {
+          "domain": "intercom.io",
+          "query_count": 4
+        },
+        {
+          "domain": "lattice.com",
+          "query_count": 4
+        },
+        {
+          "domain": "linear.app",
+          "query_count": 4
+        },
+        {
+          "domain": "servicenow.com",
+          "query_count": 4
+        },
+        {
+          "domain": "auth0.com",
+          "query_count": 3
+        },
+        {
+          "domain": "duo.com",
+          "query_count": 3
+        },
+        {
+          "domain": "figma.com",
+          "query_count": 3
+        },
+        {
+          "domain": "greenhouse.io",
+          "query_count": 3
+        },
+        {
+          "domain": "office365.com",
+          "query_count": 3
+        },
+        {
+          "domain": "workday.com",
+          "query_count": 3
+        },
+        {
+          "domain": "calendly.com",
+          "query_count": 2
+        },
+        {
+          "domain": "clickup.com",
+          "query_count": 2
+        },
+        {
+          "domain": "cloudflare.com",
+          "query_count": 2
+        },
+        {
+          "domain": "datadog.com",
+          "query_count": 2
+        },
+        {
+          "domain": "fastly.net",
+          "query_count": 2
+        },
+        {
+          "domain": "microsoft.com",
+          "query_count": 2
+        },
+        {
+          "domain": "miro.com",
+          "query_count": 2
+        },
+        {
+          "domain": "newrelic.com",
+          "query_count": 2
+        },
+        {
+          "domain": "pagerduty.com",
+          "query_count": 2
+        },
+        {
+          "domain": "stripe.com",
+          "query_count": 2
+        },
+        {
+          "domain": "zendesk.com",
+          "query_count": 2
+        },
+        {
+          "domain": "amazonaws.com",
+          "query_count": 1
+        },
+        {
+          "domain": "bamboohr.com",
+          "query_count": 1
+        },
+        {
+          "domain": "google.com",
+          "query_count": 1
+        },
+        {
+          "domain": "helpscout.com",
+          "query_count": 1
+        },
+        {
+          "domain": "hubspot.com",
+          "query_count": 1
+        },
+        {
+          "domain": "lever.co",
+          "query_count": 1
+        },
+        {
+          "domain": "okta.com",
+          "query_count": 1
+        },
+        {
+          "domain": "salesforce.com",
+          "query_count": 1
+        },
+        {
+          "domain": "sendgrid.net",
+          "query_count": 1
+        }
+      ]
+    },
+    {
+      "id": "sess_20260329_134220",
+      "name": "DNS Log \u2014 29 Mar 2026",
+      "uploaded_at": "2026-03-29T13:42:20",
+      "log_lines": 100,
+      "unique_domains": 42,
+      "shadow_tools_found": 8,
+      "exposure_score": 19.79,
+      "tool_detections": [
+        {
+          "tool_id": "trello",
+          "tool_name": "Trello",
+          "category": "Project Management",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Public boards risk",
+            "No SSO enforcement",
+            "Data stored outside corporate systems"
+          ],
+          "query_count": 9,
+          "unique_ips": 7,
+          "first_seen": "2026-03-29T10:15:00",
+          "last_seen": "2026-03-29T11:13:00",
+          "domains_matched": [
+            "atlassian.com",
+            "trello.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Jira / Azure DevOps"
+        },
+        {
+          "tool_id": "loom",
+          "tool_name": "Loom",
+          "category": "Video Messaging",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Screen recordings may capture sensitive data",
+            "External sharing uncontrolled"
+          ],
+          "query_count": 3,
+          "unique_ips": 3,
+          "first_seen": "2026-03-29T10:16:00",
+          "last_seen": "2026-03-29T11:06:00",
+          "domains_matched": [
+            "loom.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Microsoft Stream"
+        },
+        {
+          "tool_id": "dropbox",
+          "tool_name": "Dropbox",
+          "category": "File Storage",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Unauthorised data egress",
+            "No DLP controls",
+            "Personal accounts uncontrolled"
+          ],
+          "query_count": 2,
+          "unique_ips": 2,
+          "first_seen": "2026-03-29T11:06:00",
+          "last_seen": "2026-03-29T11:14:00",
+          "domains_matched": [
+            "dropbox.com"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "SharePoint / OneDrive"
+        },
+        {
+          "tool_id": "github_personal",
+          "tool_name": "GitHub (Personal Account)",
+          "category": "Code Repository",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Source code leakage to personal repos",
+            "IP ownership unclear",
+            "Public repo risk"
+          ],
+          "query_count": 2,
+          "unique_ips": 2,
+          "first_seen": "2026-03-29T10:16:00",
+          "last_seen": "2026-03-29T10:33:00",
+          "domains_matched": [
+            "github.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "GitHub Enterprise / Azure DevOps"
+        },
+        {
+          "tool_id": "slack",
+          "tool_name": "Slack (Unauthorised Workspace)",
+          "category": "Messaging",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Multiple workspaces not controlled",
+            "File sharing unmonitored"
+          ],
+          "query_count": 2,
+          "unique_ips": 2,
+          "first_seen": "2026-03-29T11:07:00",
+          "last_seen": "2026-03-29T11:08:00",
+          "domains_matched": [
+            "slack.com"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Microsoft Teams"
+        },
+        {
+          "tool_id": "mailchimp",
+          "tool_name": "Mailchimp",
+          "category": "Email Marketing",
+          "risk_level": "HIGH",
+          "risk_reasons": [
+            "Customer data exported to third party",
+            "GDPR consent issues",
+            "Uncontrolled mailing lists"
+          ],
+          "query_count": 1,
+          "unique_ips": 1,
+          "first_seen": "2026-03-29T10:20:00",
+          "last_seen": "2026-03-29T10:20:00",
+          "domains_matched": [
+            "mailchimp.com"
+          ],
+          "gdpr_concern": true,
+          "approved_alternative": "Approved CRM email module"
+        },
+        {
+          "tool_id": "notion",
+          "tool_name": "Notion",
+          "category": "Productivity",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Data outside corporate boundary",
+            "Sharing controls vary by plan"
+          ],
+          "query_count": 1,
+          "unique_ips": 1,
+          "first_seen": "2026-03-29T10:33:00",
+          "last_seen": "2026-03-29T10:33:00",
+          "domains_matched": [
+            "notion.so"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Confluence / SharePoint"
+        },
+        {
+          "tool_id": "zoom",
+          "tool_name": "Zoom (Personal Account)",
+          "category": "Video Conferencing",
+          "risk_level": "MEDIUM",
+          "risk_reasons": [
+            "Recording storage outside corporate control",
+            "Personal accounts unmanaged"
+          ],
+          "query_count": 1,
+          "unique_ips": 1,
+          "first_seen": "2026-03-29T10:19:00",
+          "last_seen": "2026-03-29T10:19:00",
+          "domains_matched": [
+            "zoom.us"
+          ],
+          "gdpr_concern": false,
+          "approved_alternative": "Microsoft Teams / Webex"
+        }
+      ],
+      "unknown_domains": [
+        {
+          "domain": "freshdesk.com",
+          "query_count": 5
+        },
+        {
+          "domain": "twilio.com",
+          "query_count": 5
+        },
+        {
+          "domain": "asana.com",
+          "query_count": 4
+        },
+        {
+          "domain": "intercom.io",
+          "query_count": 4
+        },
+        {
+          "domain": "lattice.com",
+          "query_count": 4
+        },
+        {
+          "domain": "linear.app",
+          "query_count": 4
+        },
+        {
+          "domain": "servicenow.com",
+          "query_count": 4
+        },
+        {
+          "domain": "auth0.com",
+          "query_count": 3
+        },
+        {
+          "domain": "duo.com",
+          "query_count": 3
+        },
+        {
+          "domain": "figma.com",
+          "query_count": 3
+        },
+        {
+          "domain": "greenhouse.io",
+          "query_count": 3
+        },
+        {
+          "domain": "office365.com",
+          "query_count": 3
+        },
+        {
+          "domain": "workday.com",
+          "query_count": 3
+        },
+        {
+          "domain": "calendly.com",
+          "query_count": 2
+        },
+        {
+          "domain": "clickup.com",
+          "query_count": 2
+        },
+        {
+          "domain": "cloudflare.com",
+          "query_count": 2
+        },
+        {
+          "domain": "datadog.com",
+          "query_count": 2
+        },
+        {
+          "domain": "fastly.net",
+          "query_count": 2
+        },
+        {
+          "domain": "microsoft.com",
+          "query_count": 2
+        },
+        {
+          "domain": "miro.com",
+          "query_count": 2
+        },
+        {
+          "domain": "newrelic.com",
+          "query_count": 2
+        },
+        {
+          "domain": "pagerduty.com",
+          "query_count": 2
+        },
+        {
+          "domain": "stripe.com",
+          "query_count": 2
+        },
+        {
+          "domain": "zendesk.com",
+          "query_count": 2
+        },
+        {
+          "domain": "amazonaws.com",
+          "query_count": 1
+        },
+        {
+          "domain": "bamboohr.com",
+          "query_count": 1
+        },
+        {
+          "domain": "google.com",
+          "query_count": 1
+        },
+        {
+          "domain": "helpscout.com",
+          "query_count": 1
+        },
+        {
+          "domain": "hubspot.com",
+          "query_count": 1
+        },
+        {
+          "domain": "lever.co",
+          "query_count": 1
+        },
+        {
+          "domain": "okta.com",
+          "query_count": 1
+        },
+        {
+          "domain": "salesforce.com",
+          "query_count": 1
+        },
+        {
+          "domain": "sendgrid.net",
+          "query_count": 1
+        }
+      ]
+    }
+  ]
+}
